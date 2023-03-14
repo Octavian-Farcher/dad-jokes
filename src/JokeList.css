@@ -1,0 +1,111 @@
+.JokeList{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    height: 90%;
+    
+}
+.JokeList-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    -webkit-box-shadow: -14px 12px 35px 9px rgba(0,0,0,0.75);
+    -moz-box-shadow: -14px 12px 35px 9px rgba(0,0,0,0.75);
+    box-shadow: -14px 12px 35px 9px rgba(0,0,0,0.75);
+    background-color: wheat;
+    z-index: 2;
+   
+}
+
+.JokeList-sidebar img{
+width: 80%;
+height: 30%;
+}
+
+.JokeList-title{
+    font-size: 40px;
+    color: azure;
+    letter-spacing: 5px;
+    
+}
+.JokeList-title span{
+    letter-spacing: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 45px;
+}
+
+.JokeList-jokes{
+    overflow: scroll;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    background: azure;
+    -webkit-box-shadow: -14px 12px 35px 9px rgba(0,0,0,0.75);
+    -moz-box-shadow: -14px 12px 35px 9px rgba(0,0,0,0.75);
+    box-shadow: -14px 12px 35px 9px rgba(0,0,0,0.75);
+    
+}
+.JokeList-Loading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.JokeList-spinning {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+  }
+  .JokeList-spinning:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid wheat;
+    border-color: wheat transparent wheat transparent;
+    animation: JokeList-spinning 1.2s linear infinite;
+  }
+  @keyframes JokeList-spinning {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(720deg);
+    }
+  }
+
+  .JokeList-getmore{
+    font-size: 1.5rem;
+    white-space: nowrap;
+    width:50%;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    color: azure;
+    font-weight: 700;
+    margin : 2rem;
+    background: linear-gradient(
+        135deg,
+        rgb(137, 180, 64)0%,
+        rgb(137, 180, 64)50%,
+        rgb(190, 11, 71)50%,
+        rgba(190,11,71)100%
+      );
+      -webkit-box-shadow: -10px 12px 35px 5px rgba(0,0,0,0.75);
+      -moz-box-shadow: -10px 12px 35px 5px rgba(0,0,0,0.75);
+      box-shadow: -10px 12px 35px 5px rgba(0,0,0,0.75);
+      transition:0.5s
+  }
+
+  .JokeList-getmore:hover{
+    -webkit-box-shadow: -10px 12px 10px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: -10px 12px 10px 5px rgba(0,0,0,0.75);
+    box-shadow: -10px 12px 10px 5px rgba(0,0,0,0.75);
+    transform:translateY(-2px)
+}
